@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body{
+			background-image: url(img/contact.jpg);
+			background-size: cover;
+			margin: 0px;
+		}
+        
+        h2{
+        	color: black;
+        	background-color: white;
+        	margin:0px;
+        	padding: 10px;
+        }
+		.maindiv{
+			background-color: rgba(0,0,0,0.6);
+			margin-top: 100px;
+			width: 30%;
+			border-radius: 20px;
+			margin-left: 800px;
+			padding : 20px;	
+			color: white;
+			font-size: 20px;
+		}
+
+		.btn{
+			background-color: aquamarine;
+			color: black;
+			border-radius: 20px;
+			font-size: 17px;
+			padding: 8px 24px;
+			border: none;
+		}
+		.btn:hover{
+			background-color: black;
+			color: white;
+			cursor: pointer;
+		}
+
+		.div1{
+			display: inline-block;
+		}
+		
+        @font-face{
+             font-family: myfont;
+             src: url("CSS/Lost Emerald.otf");
+		}
+		body{
+			font-family:myfont;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<div class = "maindiv">
+			<h2>Contact Us</h2>
+			<br>
+		   <form>
+			<table cellpadding="7">
+				<tr>
+					<td>First Name:</td>
+					<td><input type="text" name="fname"></td>
+				</tr>
+
+				<tr>
+					<td>Last Name:</td>
+					<td><input type="text" name="lname"></td>
+				</tr>
+
+				<tr>
+					<td>Phone no:</td>
+					<td><input type="number" name="phno"></td>
+				</tr>
+
+				<tr>
+					<td>Email ID :</td>
+					<td><input type="text" name="email"></td>
+				</tr>
+
+				<tr>
+					<td>Message:</td>
+					<td><textarea rows="5" cols="30"></textarea></td>
+				</tr>
+
+				<tr>
+					<td colspan="2" align="center"><input type="button" value="Send Message" class="btn">
+						<input type="reset" value="Reset" class="btn"></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	
+	</center>
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body{
+			margin:0px;
+		}
+		ul{
+			position: fixed;
+			background-color: #000123;
+			width: 100%;
+			margin:0px;
+		}
+		li{
+			float: left;
+			font-size: 20px;
+			padding: 10px;
+			list-style-type: none;
+			margin-left: 10px;
+			padding-left: 20px;
+			background-color: #000123;
+		}
+		li a{
+			text-decoration: none;
+			color: white;
+
+		}
+		@font-face{
+             font-family: myfont;
+             src: url("CSS/Lost Emerald.otf");
+		}
+		.divclass{
+			display: inline-block;
+			width: 400px;
+			height: 300px;
+			margin-top: 20px;
+			background-color: #000123;
+            padding-top: 20px;
+			font-size: 20px;
+			padding: 20px 30px;
+			color: white;
+			align-items: center;
+			border-radius: 20px;
+			margin-left: 10px;
+
+		}
+		
+		#top{
+			background-image: url("img/tour.jpg");
+			background-repeat: no-repeat;
+			height: 500px;
+			padding-top: 90px;
+			text-align: center;
+			font-size: 30px;
+			font-family: myfont;
+			color: white;
+			font-weight: 20px;
+		}
+		#top2{
+			margin-top: 100px;
+
+		}
+		#search{
+			background-color: rgba(0,0,0,0.6);
+			width: 700px;
+			height: 50px;
+			margin-left: 400px;
+			border-radius: 40px;
+			font-size: 20px;
+			padding-top: 30px;
+
+		}
+		#second{
+			margin :0px;
+		}
+		#maindiv{
+			margin-left: 80px;
+		}
+		#offer{
+			height: 100px;
+			width: 1300px;
+			background: linear-gradient(to right, #30CFB4,#308ECF);
+			margin-top: 150px;
+			margin-left: 100px;
+			margin-bottom: 30px;
+			font-family: myfont;
+			font-size: 30px;
+			padding: 10px;
+		}
+		#enjoy{
+			margin-top: 30px;
+			margin-left: 30px;
+		}
+		#slight{
+			transform: rotate(30deg);
+			background-color: #F20606;
+			color: white;
+			width: 170px;
+			height: 40px;
+			margin-right: 100px;
+			float: right;
+			margin-top: 160px;
+			text-align: center;
+			border-radius: 10px;
+			font-size: 20px;
+		}
+		button{
+			background-color:#1A5276 ;
+			border-radius: 10px;
+			color: white;
+			margin-left: 300px;
+			font-size: 20px;
+			padding: 10px;
+			border: none;
+		}
+		button:hover{
+			cursor: pointer;
+			background-color: gray;
+		}
+		#plane{
+			animation-name: plane;
+			animation-duration: 10s;
+			margin-top: -90px;
+			padding: 1px;
+		}
+		@keyframes plane{
+			from{
+				margin-left: 0%
+			}
+			to{
+				margin-left: 100%;
+			}
+		}
+
+        .search-bar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+    }
+    
+    .search-bar input[type="text"] {
+      padding: 5px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 300px;
+      max-width: 100%;
+    }
+    
+    .search-bar input[type="submit"] {
+      margin-left: 10px;
+      padding: 5px 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+	</style>
+	<script type="text/javascript">
+		function reload_fun()
+		{
+               location.reload();
+               
+		}
+		function startwork(){
+			setTimeout('reload_fun()',10000);
+		}
+	</script>
+</head>
+<body onload="startwork()">
+	<ul>
+			<li><a href="#see">See & Do</a></li>
+			<li><a href="package.html">Plan Your Trip</a></li>
+			<li><a href="servics.html">Our Services</a></li>
+			<li><a href="Destination.html">Destination</a></li>
+			<li><a href="why us.html">Why us</a></li>
+
+		</ul>
+	<div id="top">
+        <p>Book your Best Travel experiences</p>
+        
+        <div class="search-bar">
+			<input type="text" placeholder="Enter a destination" list="destinations">
+			<datalist id="destinations">
+			  <option value="New York">
+			  <option value="Paris">
+			  <option value="Tokyo">
+			  <option value="London">
+			  <option value="Rome">
+			  <option value="Sydney">
+			  <option value="Barcelona">
+			</datalist>
+			<input type="submit" value="Search">
+		  </div>
+        
+	</div>
+
+    
+       <img src="img/plane.gif" id="plane" width="200" height="200">    	
+    
+
+	<h1 id="second">Upcoming Tours</h1>
+	<div id="maindiv">
+		<div class="divclass">
+			<center><img src="img/Dubai.jpg"></center><br>
+			Head into the desert outside Dubai for an evening of dining and entertainment. First, enjoy a thrilling dune bashing ride with an experienced driver at the wheel,
+		</div>
+
+		<div class="divclass">
+			<center><img src="img/europe.jpg"></center><br>
+			Ensure a memorable night out in Paris with a gourmet dinner cruise along the Seine River. Float past the city’s famed monuments, such as the Eiffel Tower
+		</div>
+
+		<div class="divclass" id="maldive">
+			<center><img src="img/maldives.jpg"></center><br>
+			The Maldives is an archipelagic state situated in the Indian Ocean known for its luxurious water villas A tropical haven of white sand beaches
+		</div>
+	</div>
+    
+    <b><p id="slight">Offer!</p></b>
+
+    <div id="offer">
+    	<table>
+    		<tr>
+    	<td><p id="enjoy">Enjoy Your vacations with Exclusive Deals!</p></td>
+		<form action="package.html">
+    	<td><button>Check Now</button></td>
+			</form>
+    	</tr>
+    	</table> 
+    	
+    </div>
+</body>
+</html>
